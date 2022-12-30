@@ -1,0 +1,40 @@
+ALL CODE WRITTEN by JUAN FERNANDO MORALES NOVEMBER 2022
+
+
+USAGE:
+
+executable wordrange requires two textfile arguments : <INPUT> <OUTPUT>
+INPUT should have one of each commands per line: 
+  i STRING 
+  r STRING1 STRING2
+i inserts string STRING into an AVL tree, 
+r provides the range between two strings STRING1 STRING2
+
+PURPOSE:
+Takes input of words from file, sorts words into AVL tree, provides range between two given words. words are ranked by alphabetical ordering.
+
+
+Description of files:
+
+BinarySearchTree.h - header file for binary search tree
+BinarySearchTree.cpp - file containing implementation of header
+main.cpp - file containing the IO interpretation that feeds input from INPUT into an AVL tree
+
+Dependancies:
+used BinarySearchTree.cpp and BinarySearchTree.h files from the CSE13 class i took in freshman year, 
+This was just a standard BST, which i developed on to make it a functioning AVL tree. updated functions:
+range
+range_only_high
+range_only_low
+calculate_height
+calculate_height_recursive
+calculate_subtree
+rotate_right
+rotate_left
+recursive_update
+propagate
+check_heights
+
+additionally, added attributes height and subtree_size to TreeNode struct. 
+
+ALL CODE WRITTEN by JUAN FERNANDO MORALES NOVEMBER 2022

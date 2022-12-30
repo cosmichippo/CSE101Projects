@@ -1,0 +1,1 @@
+g++ -std=c++11 main.cpp BinarySearchTree.h BinarySearchTree.cpp -o wordrange -g
