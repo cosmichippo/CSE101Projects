@@ -1,0 +1,39 @@
+README for Homework 2 NQUEENS assignment, CSE101
+
+Juan-Fernando Morales, 2022
+-----------------------------------------------------
+
+Code files: Makefile, main.cpp, nqueens (executable), 
+Test files: test.cpp
+Extra files: README, hw_shakespeare.pdf
+
+----------------------------------------------------
+
+Usage:
+Generates solutions to NQueens problem
+
+Reads lines from input text file, which should follow format:
+
+Size_of_Board X_coord1 Y_coord1 X_coord2 Y_coord2
+
+where X_coord and Y_coord correspond to the coordinates of immutable placements of queens.
+
+
+Run:
+Call make on Makefile,
+Run ./nqueens -input_file -output_file
+
+Overview of code structure:
+
+functions:
+IinVec - checks if integer is in vector of integers. 
+helper - this checks from position (column, row) to col 0, to verify the validity of the entry (column, row)
+iterative_queens - INPUTS (chessboard array, , restricted columns) OUTPUTS (array of solutions).
+main - INPUTS: input file, output file. OUTPUTS: places output in provided output file. 
+
+stack based implementation of a backtracking algorithm:
+-push onto stack position (0,0)
+-pop top of stack. iterate from the position provided by (pop), until the end of the column.
+-if a valid input is found. then, push the next position in the column to the stack, then move onto the next column at row position 0.
+-elsewise, do nothing
+
